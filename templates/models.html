@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero section-pad">
+  <span class="eyebrow">Portfólio</span>
+  <h1>Modelos e técnicas</h1>
+  <p>Uma seleção inicial para apresentar estilos, acabamentos e possibilidades de personalização.</p>
+</section>
+<section class="section-pad section-pad--topless">
+  <div class="filter-chips reveal" data-model-filters>
+    <button class="chip is-active" data-model-filter="all">Todos</button>
+    {% for category in models | map(attribute='category') | unique %}<button class="chip" data-model-filter="{{ category }}">{{ category }}</button>{% endfor %}
+  </div>
+  <div class="portfolio-grid">
+    {% for model in models %}
+    <article class="portfolio-card reveal" data-model-card data-category="{{ model.category }}">
+      <div class="portfolio-card__image"><img src="{{ model.image }}" alt="Ilustração de {{ model.title }}" loading="lazy"><span>{{ model.category }}</span></div>
+      <div class="portfolio-card__content"><h3>{{ model.title }}</h3><p>{{ model.description }}</p><a href="{{ brand.whatsapp_url }}" target="_blank" rel="noopener">Quero este estilo →</a></div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="info-strip section-pad reveal">
+  <div><strong>Tem uma referência?</strong><span>Envie a imagem pelo WhatsApp para avaliarmos cores, formato e complexidade.</span></div>
+  <a class="button button--dark" href="{{ brand.whatsapp_url }}" target="_blank" rel="noopener">Enviar inspiração</a>
+</section>
+{% endblock %}

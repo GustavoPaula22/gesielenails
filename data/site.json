@@ -1,0 +1,137 @@
+{
+  "brand": {
+    "name": "Gesiele Nails",
+    "short_name": "Gesiele",
+    "mark": "GN",
+    "studio_label": "Nails Studio",
+    "tagline": "Alongamentos que valorizam sua identidade",
+    "professional": "Gesiele",
+    "city": "Trindade - GO",
+    "whatsapp": "556293965984",
+    "instagram": "@gesielenails",
+    "instagram_url": "https://instagram.com/gesielenails",
+    "booking_message": "Olá! Conheci seu trabalho pelo site e gostaria de agendar um horário.",
+    "developer_name": "Gustavo de Paula",
+    "developer_handle": "@gustavopaula",
+    "developer_url": "https://instagram.com/gustavopaula.s2"
+  },
+  "hero": {
+    "eyebrow": "Beleza, técnica e personalidade",
+    "title": "Unhas elegantes para momentos inesquecíveis.",
+    "description": "Alongamentos personalizados, acabamento delicado e uma experiência pensada para você.",
+    "primary_cta": "Agendar atendimento",
+    "secondary_cta": "Conhecer modelos"
+  },
+  "highlights": [
+    {"value": "Muitas", "label": "possibilidades de nail art"},
+    {"value": "30", "label": "dias de durabilidade média"},
+    {"value": "100%", "label": "atendimento personalizado"}
+  ],
+  "services": [
+    {"icon": "sparkles", "title": "Molde F1", "description": "Estrutura moderna, resistente e com acabamento natural."},
+    {"icon": "gem", "title": "Fibra de vidro", "description": "Alongamento leve, elegante e adaptado ao formato da unha."},
+    {"icon": "palette", "title": "Nail art", "description": "Decorações exclusivas, florais, cromados, francesas e efeitos."}
+  ],
+  "gel_colors": [
+    {"name": "Nude Rosé", "code": "NR-01", "hex": "#d9a6a6", "finish": "Cremoso", "collection": "Essenciais"},
+    {"name": "Rosa Ballet", "code": "RB-02", "hex": "#efc4cf", "finish": "Cremoso", "collection": "Essenciais"},
+    {"name": "Branco Leitoso", "code": "BL-03", "hex": "#f4eee8", "finish": "Leitoso", "collection": "Clássicos"},
+    {"name": "Vinho Real", "code": "VR-04", "hex": "#6f2438", "finish": "Cremoso", "collection": "Intensos"},
+    {"name": "Azul Sereno", "code": "AS-05", "hex": "#8aa9c9", "finish": "Cremoso", "collection": "Pastéis"},
+    {"name": "Lavanda", "code": "LV-06", "hex": "#b9a4cf", "finish": "Cremoso", "collection": "Pastéis"},
+    {"name": "Verde Sálvia", "code": "VS-07", "hex": "#9eae9a", "finish": "Cremoso", "collection": "Pastéis"},
+    {"name": "Dourado Glow", "code": "DG-08", "hex": "#c5a35a", "finish": "Metalizado", "collection": "Efeitos"},
+    {"name": "Cromo Pérola", "code": "CP-09", "hex": "#e3d9d2", "finish": "Cromado", "collection": "Efeitos"},
+    {"name": "Preto Ônix", "code": "PO-10", "hex": "#242124", "finish": "Cremoso", "collection": "Intensos"}
+  ],
+  "models": [
+    {"title": "Babyboomer clássico", "category": "Babyboomer", "description": "Degradê suave e elegante para qualquer ocasião.", "image": "assets/img/model-babyboomer.svg"},
+    {"title": "Francesa reversa", "category": "Francesa", "description": "Estrutura precisa, sorriso marcado e acabamento sofisticado.", "image": "assets/img/model-francesa.svg"},
+    {"title": "Florais delicados", "category": "Florais", "description": "Composição artística com flores e folhagens feitas à mão.", "image": "assets/img/model-floral.svg"},
+    {"title": "Efeito cromado", "category": "Cromado", "description": "Brilho espelhado para um visual moderno e marcante.", "image": "assets/img/model-cromo.svg"},
+    {"title": "Babycolor", "category": "Babycolor", "description": "Transição de cores com acabamento leve e criativo.", "image": "assets/img/model-babycolor.svg"},
+    {"title": "Cor única premium", "category": "Clássicos", "description": "Cobertura uniforme, brilho intenso e acabamento impecável.", "image": "assets/img/model-cor-unica.svg"}
+  ],
+  "pricing": [
+    {
+      "category": "Aplicações",
+      "subtitle": "Primeira aplicação ou nova estrutura",
+      "items": [
+        {"service": "Gel Tips", "price": "R$ 140", "note": "Cor única inclusa"},
+        {"service": "Fibra de Vidro", "price": "R$ 140", "note": "Cor única inclusa"},
+        {"service": "Molde F1", "price": "R$ 140", "note": "Cor única inclusa"},
+        {"service": "Acrílico", "price": "R$ 140", "note": "Cor única inclusa"},
+        {"service": "Banho de Gel", "price": "R$ 130", "note": "Reforço da unha natural. Cor única inclusa"}
+      ]
+    },
+    {
+      "category": "Nail Art Básica",
+      "subtitle": "Personalizações e técnicas especiais",
+      "items": [
+        {"service": "Pó Cromo", "price": "R$ 170", "note": "Cor única inclusa + Efeito espelhado"},
+        {"service": "Baby Boomer", "price": "R$ 160", "note": "Efeito esfumado entre géis, sendo um deles 'branco'"},
+        {"service": "Baby Color", "price": "R$ 160", "note": "Efeito esfumado entre géis"},
+        {"service": "Baby Glitter", "price": "R$ 160", "note": "Efeito esfumado entre géis + glitter"},
+        {"service": "Francesa Reversa Tradicional", "price": "R$ 160", "note": "Cor única inclusa + Ponta 'branca' em 'V'"},
+        {"service": "Francesa Reversa Color", "price": "R$ 160", "note": "Cor única inclusa + Ponta em 'V'"},
+        {"service": "Marmorezado", "price": "R$ 160", "note": "Efeito de marmorizado em cores e padrões únicos"},
+        {"service": "Esmaltação em gel", "price": "R$ 155", "note": "Alta durabilidade e brilho"}
+      ]
+    },
+    {
+      "category": "Nail Art Premium",
+      "subtitle": "Personalizações e técnicas especiais + detalhes especiais",
+      "items": [
+        {"service": "Florais em cor única", "price": "R$ 200", "note": "Em todas as mãos"},
+        {"service": "Francesa White + Cromo + Florais", "price": "R$ 200", "note": "Detalhe único e elegante"},
+        {"service": "Francesa White + Cromado", "price": "R$ 200", "note": "Detalhe único e sofisticado"},
+        {"service": "Francesa White + Florais", "price": "R$ 200", "note": "Detalhe único e delicado"},
+        {"service": "Francesa Color + Cromado", "price": "R$ 200", "note": "Detalhe único e sofisticado com o seu jeitinho"},
+        {"service": "Francesa Color + Florais", "price": "R$ 200", "note": "Detalhe único e delicado com o seu jeitinho"},
+        {"service": "Baby Boomer + Florais", "price": "R$ 200", "note": "Detalhe único, com muita delicadeza e glamour"},
+        {"service": "Baby Color + Florais", "price": "R$ 200", "note": "Detalhe único, com muita delicadeza e glamour com o seu jeitinho"},
+        {"service": "Aquarela Floral", "price": "R$ 200", "note": "Detalhes exclusivos e delicados, bem definidos e de cores fantásticas"},
+        {"service": "Temáticas", "price": "R$ 200", "note": "Uma decoração exclusiva e única (Natal e Ano Novo)"}
+      ]
+    },
+    {
+      "category": "Manutenções",
+      "subtitle": "Renovação da estrutura e acabamento",
+      "items": [
+        {"service": "Manutenção — crescimento", "price": "R$ 100", "note": "Mantendo a cor"},
+        {"service": "Manutenção — troca de cor", "price": "R$ 110", "note": "Nova esmaltação"},
+        {"service": "Manutenção nail art básica", "price": "R$ 127", "note": "Troca de decoração"},
+        {"service": "Manutenção nail art premium", "price": "R$ 147", "note": "Troca de decoração"}
+      ]
+    },
+    {
+      "category": "Adicionais",
+      "subtitle": "Par de dedos",
+      "items": [
+        {"service": "Pedraria", "price": "R$ 9", "note": ""},
+        {"service": "Adesivos", "price": "R$ 9", "note": ""},
+        {"service": "Flor Havaiana", "price": "R$ 9", "note": ""},
+        {"service": "Florais", "price": "R$ 9", "note": ""},
+        {"service": "Aquarela", "price": "R$ 9", "note": ""},
+        {"service": "Flor Sólida", "price": "R$ 9", "note": ""},
+        {"service": "Laços 3D", "price": "R$ 9", "note": ""},
+        {"service": "Cromado", "price": "R$ 9", "note": ""}
+      ]
+    }
+  ],
+  "policies": [
+    "O atendimento é realizado com horário marcado.",
+    "A tolerância para atrasos é de 15 minutos.",
+    "Remoções e reparos podem ter cobrança adicional.",
+    "Valores podem variar conforme tenha mudanças nos valores dos produtos bases.",
+    "Manutenção recomendada entre 20 a 30 dias.",
+    "Reposições gratuitas somente para descolamentos ou quebras não ocasionadas por mau uso.",
+    "Decorações personalizadas do Pinterest não são reproduzidas.",
+    "Cutícula inclusa."
+  ],
+  "testimonials": [
+    {"name": "Declaração 1", "text": "Atendimento cuidadoso e acabamento perfeito. Minhas unhas ficaram lindas!"},
+    {"name": "Declaração 2", "text": "Amei cada detalhe. O ambiente é agradável e o resultado durou muito."},
+    {"name": "Declaração 3", "text": "Profissional muito caprichosa, pontual e cheia de ideias."}
+  ]
+}

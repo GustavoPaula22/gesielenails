@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Arquivo de backup local do projeto.
+site_nail_designer_profissional_responsivo.zip
+
+# Sistema operacional / editor
+.DS_Store
+Thumbs.db
+.vscode/

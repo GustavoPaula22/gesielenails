@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero section-pad">
+  <span class="eyebrow">Catálogo profissional</span>
+  <h1>Cores de gel disponíveis</h1>
+  <p>Pesquise por nome, código, coleção ou acabamento. As tonalidades na tela são referências e podem variar conforme iluminação e dispositivo.</p>
+</section>
+<section class="section-pad section-pad--topless">
+  <div class="catalog-toolbar reveal">
+    <label class="search-box"><span>⌕</span><input type="search" placeholder="Buscar cor, código ou coleção..." data-color-search></label>
+    <select aria-label="Filtrar por coleção" data-color-filter>
+      <option value="all">Todas as coleções</option>
+      {% for collection in gel_colors | map(attribute='collection') | unique %}<option value="{{ collection }}">{{ collection }}</option>{% endfor %}
+    </select>
+  </div>
+  <div class="color-grid" data-color-grid>
+    {% for color in gel_colors %}
+    <article class="color-card reveal" data-color-card data-search="{{ color.name }} {{ color.code }} {{ color.collection }} {{ color.finish }}" data-collection="{{ color.collection }}">
+      <div class="color-card__swatch" style="--swatch: {{ color.hex }}"><span>{{ color.code }}</span></div>
+      <div class="color-card__content"><div><h3>{{ color.name }}</h3><p>{{ color.collection }}</p></div><span class="tag">{{ color.finish }}</span></div>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="empty-state" data-color-empty hidden>Nenhuma cor encontrada com esses filtros.</div>
+</section>
+{% endblock %}

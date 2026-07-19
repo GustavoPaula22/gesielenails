@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero section-pad">
+  <div class="hero__content reveal">
+    <span class="eyebrow">{{ hero.eyebrow }}</span>
+    <h1>{{ hero.title }}</h1>
+    <p>{{ hero.description }}</p>
+    <div class="button-row">
+      <a class="button button--primary" href="{{ brand.whatsapp_url }}" target="_blank" rel="noopener">{{ hero.primary_cta }}</a>
+      <a class="button button--ghost" href="modelos.html">{{ hero.secondary_cta }}</a>
+    </div>
+    <div class="hero__meta">
+      <span>Atendimento com hora marcada</span>
+      <span>{{ brand.city }}</span>
+    </div>
+  </div>
+  <div class="hero__visual reveal">
+    <div class="hero-card hero-card--main">
+      <span class="hero-card__label">Nail design autoral</span>
+      <div class="nail-hand" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-card__footer"><strong>Elegância em cada detalhe</strong><small>Alongamentos e nail art</small></div>
+    </div>
+    <div class="hero-card hero-card--mini"><span>✦</span><strong>Acabamento premium</strong></div>
+  </div>
+</section>
+
+<section class="stats section-pad section-pad--compact">
+  {% for item in highlights %}
+  <div class="stat reveal"><strong>{{ item.value }}</strong><span>{{ item.label }}</span></div>
+  {% endfor %}
+</section>
+
+<section class="section-pad section-soft">
+  <div class="section-heading reveal">
+    <div><span class="eyebrow">Especialidades</span><h2>Técnica, cuidado e criatividade</h2></div>
+    <p>Cada atendimento é planejado conforme o estilo, a rotina e a estrutura das unhas da cliente.</p>
+  </div>
+  <div class="service-grid">
+    {% for service in services %}
+    <article class="service-card reveal"><div class="service-card__icon">✦</div><h3>{{ service.title }}</h3><p>{{ service.description }}</p><a href="modelos.html">Ver inspirações →</a></article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section-pad split-showcase">
+  <div class="split-showcase__visual reveal">
+    <div class="color-orbit"><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+  <div class="split-showcase__content reveal">
+    <span class="eyebrow">Catálogo de cores</span>
+    <h2>Encontre a tonalidade que combina com você</h2>
+    <p>Conheça os géis disponíveis por coleção, acabamento e código. O catálogo foi preparado para facilitar a escolha antes do atendimento.</p>
+    <a class="button button--dark" href="cores.html">Explorar cores</a>
+  </div>
+</section>
+
+<section class="section-pad section-dark">
+  <div class="section-heading section-heading--light reveal">
+    <div><span class="eyebrow">Experiência</span><h2>O que nossas clientes dizem</h2></div>
+  </div>
+  <div class="testimonial-grid">
+    {% for testimonial in testimonials %}
+    <blockquote class="testimonial reveal"><div class="stars">★★★★★</div><p>“{{ testimonial.text }}”</p><footer>{{ testimonial.name }}</footer></blockquote>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="cta-banner section-pad reveal">
+  <div><span class="eyebrow">Seu próximo alongamento</span><h2>Vamos criar uma composição exclusiva?</h2></div>
+  <a class="button button--light" href="{{ brand.whatsapp_url }}" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+</section>
+{% endblock %}

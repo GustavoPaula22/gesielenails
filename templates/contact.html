@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero section-pad">
+  <span class="eyebrow">Agendamento</span>
+  <h1>Entre em contato</h1>
+  <p>Escolha o melhor canal e envie sua ideia. Para agilizar, informe o serviço desejado, tamanho e uma referência do modelo.</p>
+</section>
+<section class="section-pad section-pad--topless contact-grid">
+  <div class="contact-panel reveal">
+    <span class="eyebrow">Atendimento</span><h2>Vamos planejar suas unhas?</h2><p>Você receberá orientações sobre disponibilidade, preparação e valor estimado.</p>
+    <div class="contact-links">
+      <a href="{{ brand.whatsapp_url }}" target="_blank" rel="noopener"><span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.52 3.48A11.86 11.86 0 0012.04 0C5.4 0 .02 5.38.02 12c0 2.12.56 4.2 1.62 6.02L0 24l6.18-1.62A11.96 11.96 0 0012.04 24C18.66 24 24 18.62 24 12c0-3.2-1.24-6.2-3.48-8.52zM12.04 21.82c-1.84 0-3.64-.5-5.2-1.44l-.38-.22-3.66.96.98-3.56-.24-.38A9.77 9.77 0 012.22 12c0-5.42 4.4-9.82 9.82-9.82 2.62 0 5.08 1.02 6.94 2.88A9.74 9.74 0 0121.86 12c0 5.42-4.4 9.82-9.82 9.82zm5.42-7.38c-.3-.16-1.76-.86-2.04-.96-.28-.1-.48-.16-.68.16s-.78.96-.96 1.16c-.18.2-.36.22-.66.08-.3-.16-1.28-.46-2.44-1.48-.9-.8-1.5-1.8-1.68-2.1-.18-.3-.02-.46.14-.62.14-.14.3-.36.46-.54.16-.18.22-.3.34-.5.12-.2.06-.38-.02-.54-.08-.16-.68-1.64-.94-2.24-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.54.08-.82.38-.28.3-1.08 1.06-1.08 2.58s1.1 2.98 1.26 3.18c.16.2 2.14 3.28 5.18 4.6.72.32 1.28.5 1.72.64.72.22 1.38.2 1.9.12.58-.08 1.76-.72 2-.42.24.3.24 1.4.18 1.54-.06.14-.28.22-.58.38z"/></svg></span><div><strong>WhatsApp</strong><small>Agendamentos e orçamentos</small></div><b>→</b></a>
+      <a href="{{ brand.instagram_url }}" target="_blank" rel="noopener"><span>◎</span><div><strong>Instagram</strong><small>{{ brand.instagram }}</small></div><b>→</b></a>
+      <div><span>⌖</span><div><strong>Localização</strong><small>{{ brand.city }}</small></div></div>
+    </div>
+  </div>
+  <div class="contact-checklist reveal"><span class="eyebrow">Antes de chamar</span><h2>Separe estas informações</h2><ol><li><span>1</span><div><strong>Serviço desejado</strong><p>Aplicação, manutenção, banho de gel ou esmaltação.</p></div></li><li><span>2</span><div><strong>Formato e tamanho</strong><p>Curta, média ou longa; quadrada, almond, bailarina ou stiletto.</p></div></li><li><span>3</span><div><strong>Referência</strong><p>Envie uma imagem ou escolha um modelo do nosso catálogo.</p></div></li></ol></div>
+</section>
+{% endblock %}

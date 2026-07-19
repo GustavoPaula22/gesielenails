@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero section-pad">
+  <span class="eyebrow">Investimento</span>
+  <h1>Tabela de valores</h1>
+  <p>Valores-base para facilitar sua escolha. O orçamento final considera comprimento, formato, manutenção necessária e complexidade da decoração.</p>
+</section>
+<section class="section-pad section-pad--topless pricing-layout">
+  <div class="pricing-columns">
+    {% for group in pricing %}
+    <article class="price-card reveal">
+      <header><span>0{{ loop.index }}</span><div><h2>{{ group.category }}</h2><p>{{ group.subtitle }}</p></div></header>
+      <div class="price-list">
+        {% for item in group["items"] %}
+        <div class="price-item"><div><strong>{{ item.service }}</strong><small>{{ item.note }}</small></div><span>{{ item.price }}</span></div>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <aside class="policy-card reveal"><span class="eyebrow">Informações importantes</span><h2>Políticas de atendimento</h2><ul>{% for policy in policies %}<li>{{ policy }}</li>{% endfor %}</ul><a class="button button--primary button--full" href="{{ brand.whatsapp_url }}" target="_blank" rel="noopener">Consultar disponibilidade</a></aside>
+</section>
+{% endblock %}
